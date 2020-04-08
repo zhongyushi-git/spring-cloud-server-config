@@ -10,7 +10,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: cloud-provider
+    name: cloud-config-provider-client
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource      #当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver        #mysql驱动包
@@ -31,10 +31,10 @@ eureka:
     #是否从EurekaServer抓取已有的注册信息，默认为true。单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://localhost:7001/eureka/
   #设置入驻的服务的名称，是唯一的
   instance:
-    instance-id: cloud-provider8001
+    instance-id: cloud-config-provider8001
     #访问路径显示ip
     prefer-ip-address: true
 
@@ -46,7 +46,7 @@ server:
 spring:
   profiles: test
   application:
-    name: cloud-provider
+    name: cloud-config-provider-client
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource      #当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver        #mysql驱动包
@@ -67,9 +67,9 @@ eureka:
     #是否从EurekaServer抓取已有的注册信息，默认为true。单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://localhost:7002/eureka/
   #设置入驻的服务的名称，是唯一的
   instance:
-    instance-id: cloud-provider8001
+    instance-id: cloud-config-provider8001
     #访问路径显示ip
     prefer-ip-address: true
