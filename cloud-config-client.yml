@@ -3,7 +3,7 @@ spring:
     active: dev
 
 
---
+---
 server:
   port: 8021
 
@@ -17,7 +17,7 @@ eureka:
       #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
       defaultZone: http://eureka7001.com:7001/eureka/
 
---
+---
 server:
   port: 8022
 
