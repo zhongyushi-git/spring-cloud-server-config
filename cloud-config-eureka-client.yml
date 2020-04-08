@@ -26,10 +26,10 @@ eureka:
 
 ---
 server:
-  port: 7001
+  port: 7002
 
 spring:
-  profiles: dev
+  profiles: test
   application:
     name: cloud-config-eureka-client
 
