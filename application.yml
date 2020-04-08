@@ -1,0 +1,18 @@
+#指定激活哪个配置
+spring:
+  profiles:
+    active: dev
+
+#开发环境配置
+---
+spring:
+  profiles: dev
+  application:
+    name: cloud-config-dev
+
+#参测试环境配置
+---
+spring:
+  profiles: test
+  application:
+    name: cloud-config-test
