@@ -3,7 +3,7 @@ spring:
     active: dev
 
 config:
-  info: version1
+  info: version2
 
 
 ---
