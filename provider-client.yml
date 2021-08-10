@@ -7,5 +7,5 @@ spring:
         service-name: ${spring.application.name}
 
 user:
-  name: 张三
+  name: 李四
   age: 20
