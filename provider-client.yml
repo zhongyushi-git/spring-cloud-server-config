@@ -5,3 +5,6 @@ spring:
       port: 8500
       discovery:
         service-name: ${spring.application.name}
+
+user.name=张三
+user.age=20
